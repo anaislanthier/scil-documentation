@@ -8,49 +8,47 @@ Interesting conferences
 Summary, coming events and deadlines
 ------------------------------------
 
-(Last update: 2025-15-1)
+(Last update: 2026-08-10)
 
 
-2025
+2026
 
-    - **Febuary 16 - 20, DSG Workshop**, Kyoto, Japan: https://www.ismrm.org/workshops/2025/Diffusion40/
+    - **Oct 14-16, 2026, ISMRM Workshop**, Aix-Marseille Université, France: https://echo.ismrm.org/program/WhiteMatter2026
 
-    - **March 17 - 25, Dipy Workshop**, Indiana, Bloomington: https://workshop.dipy.org/workshops/dipy-workshop-2025
+    - **Oct 25-29, IST**, Banff, Canada, https://tractography.io/
 
-    - **March 25 - 26, Nf-core hackathon**, Online: https://nf-co.re/events/2025/hackathon-march-2025
+        - August 29: Abstract submission
 
-        - Registration open in late January
+    - **September 27-Oct 1: MICCAI**, Strasbourg, France: https://conferences.miccai.org/2026/en/
 
-    - **May 10 - 15: ISMRM**: Honolulu, Hawaii: https: //www.ismrm.org/25m/
+         - February 12: Intention-to-submit deadline
 
-        - **CLOSED** November 6 : Full paper submission
+2027:
 
-    - **June 25-29: OHBM**, Brisbane, Australie: https://www.humanbrainmapping.org/i4a/pages/index.cfm?pageid=4229
+    - **March 15-19, 2027, DIPY Workshop**, Online: https://workshop.dipy.org/
 
-        - **CLOSED** December 18 : Full paper submission
+    - **May 8-13, 2027: ISMRM**: Vancouver, Canada: https://www.ismrm.org/27m/
 
-    - **July 9 - 11: MIDL**, Salt Lake City, Utah: https://2025.midl.io/
+        - October 28 : Abstract deadline
 
-        - January 17 : Full paper registration deadline
-        - January 24 : Full paper submission deadline
-        - April 11 : Short paper submission deadline
+    - **June 27-July 02, 2027, IPMI**, Lac Stukely, QC: https://gdr-iasis.cnrs.fr/kiosque/call-for-papers-information-processing-in-medical-imaging-ipmi-2027/
 
-    - **Oct 13 - 16, IST**, Bordeaux, France, https://tractography.io/
-        - Dates to be announced
+        - December 07: Submission deadline
 
-    - **September 23 - 27: MICCAI**, Daejeon, Korea  : https://conferences.miccai.org/2025/en/default.asp
+    - **June 26-30, 2027: OHBM**, Toronto, Canada: https://www.humanbrainmapping.org/ohbm-2027/
 
-         - February 13: Intention-to-submit deadline    
-         - February 27: Full manuscript, including supplementary material
+        - December 26 : Content submission deadline
+
+    - **July 14-16, 2027: MIDL**, Porto: https://2027.midl.io/
 
 Dates to be announced:
 
-   *No events announced as of (01-16-2025). You can check their respectives website for updates*
+   *No events announced as of last update. You can check their respective websites for updates.*
 
     - UNIQUE: https://sites.google.com/prod/view/unique-neuro-ai/activities.
-    - Neuromatch . https://conference.neuromatch.io/
-    - CERVOLET : https://www.facebook.com/CERVOLET/
-
+    - CERVOLET : https://www.facebook.com/CERVOLET/, for students from Laval University
+    - The ISMRM offers its main conference but also other events. In 2025, there was an event from the Diffusion Study Group: https://www.ismrm.org/workshops/2025/Diffusion40/. In 2026, there was en event called "24 hours of microstructure": https://www.ismrm.org/virtual-meetings/24-hours-of-microstructure/. It is worth checking their calendar: https://www.ismrm.org/calendar/.
+    - **Nf-core hackathon**, Hybrid (online-local): to be announced. See here https://nf-co.re/events/hackathon, or previous event here https://nf-co.re/events/2026/hackathon-march-2026
 
 International events
 --------------------
