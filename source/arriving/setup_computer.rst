@@ -53,24 +53,13 @@ Other python packages can be installed by replacing python3.X by a version of yo
 Virtual environments
 """"""""""""""""""""
 
-Virtual environments are a good way to separate the system's python installation from the python version you need for your work. It also allows you to have a precise set of python packages with specific versions. While there are many options for environments, we highly recommand using `VirtualEnv <https://virtualenv.pypa.io/en/latest/>`_. Start by installing it and creating a directory where all your environments will be saved:
+Virtual environments are a good way to separate the system's python installation from the python version you need for your work. It also allows you to have a precise set of python packages with specific versions. While there are many options for environments, we highly recommand using `uv <https://docs.astral.sh/uv/getting-started/installation/>`_. Start by installing it and creating a directory where all your environments will be saved:
 
 .. code-block:: bash
 
-    sudo apt install python3-virtualenvwrapper
-    mkdir ~/Envs
+    mkdir ~/.venvs
 
-Then you should add these lines in your .bashrc (:bash:`code ~/.bashrc`):
-
-.. code-block:: bash
-
-    export WORKON_HOME=~/Envs/
-    #export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3   # uncomment this line if you have errors when starting your terminal (next step)
-    source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-
-If you get an error in the next steps, refering to "command not found", it is possible that virtualenvwrapper was not installed in :bash:`/usr/share`. In that case, find where it is (:bash:`whereis virtualenvwrapper`) and modify your .bashrc accordingly (:bash:`source WHERE_IS_VIRTUALENVWRAPPER/virtualenvwrapper/virtualenvwrapper.sh`).
-
-Finally, you can restart the terminal and create an environment:
+You can restart the terminal and create an environment:
 
 .. code-block:: bash
 
@@ -78,19 +67,18 @@ Finally, you can restart the terminal and create an environment:
                     # depending on the use you will give to this environment.
                     # Try to be explicit
     # One of:
-    mkvirtualenv $NAME
-    mkvirtualenv --python=python3.10 $NAME   # To use one precise python version
-                                                # You can also use the complete path to the python installation
-    mkvirtualenv $NAME --python=/usr/bin/python3.10  # Equivalent. The python
-                                                        # version must be already
-                                                        # installed on your computer
+    uv venv ~/.venvs/$NAME
+    uv venv ~/.venvs/$NAME --python 3.13 # To use one precise python version
+                                         # You can also use the complete path to the python installation
+                                         # The python version must be already
+                                         # installed on your computer
 
     # Note. To download a python version to your /usr/bin without installing it:
     # https://www.python.org/downloads/
 
-When everything is set, restart your terminal. You should now be able to work in a chosen environment by using :bash:`workon $NAME`. Now everytime you need to install a new library inside the environment, you should always try to use :bash:`pip install your_library`. The environment will use the right pip based on the current python version. *Don't use sudo pip!* It will use the pip of the system!
+When everything is set, restart your terminal. You should now be able to work in a chosen environment by using :bash:`source ~/.venvs/YOUR-VIRTUAL-ENV-NAME/bin/activate`. Now everytime you need to install a new library inside the environment, you should always try to use :bash:`uv pip install your_library`. The environment will use the right pip based on the current python version. *Don't use sudo pip!* It will use the pip of the system!
 
-You might want to always have a specific environment when opening a terminal. To do so, simply open the .bashrc and copy-paste this :bash:`workon somename` at the end of it (don't forget to replace :bash:`somename` by the actual name of your environment).
+You might want to always have a specific environment when opening a terminal. To do so, simply open the .bashrc and copy-paste this :bash:`source ~/.venvs/YOUR-VIRTUAL-ENV-NAME/bin/activate` at the end of it (don't forget to replace :bash:`YOUR-VIRTUAL-ENV-NAME` by the actual name of your environment).
 
 Git
 """
@@ -327,13 +315,13 @@ Installation
 To install it (it might already be installed on a lab computer), follow these instructions depending on your OS, or refer to the `FAQ <https://github.com/imeka/mi-brain/wiki/FAQ#how-to-install>`_.
 
     **On Linux**
-        * Download the Linux version of MI-Brain `here <https://github.com/imeka/mi-brain/releases>`_.
+        * Download the Linux version of MI-Brain `here <https://scil.usherbrooke.ca/softwares/MI-Brain-linux-x86_64.tar.gz>`_.
         * In a terminal, extract the .tar.gz release archive using :bash:`tar -xvzf NAME_OF_THE_FILE.tar.gz -C DIRECTORY_TO_PUT_MI_BRAIN`.
         * Add this to your .bashrc (you can change the name of the alias to your liking): :bash:`alias mibrain="bash DIRECTORY_TO_PUT_MI_BRAIN/MI-Brain.sh"`.
         * You can now open MI-Brain by typing :bash:`mibrain` in the terminal and pressing enter.
     
     **On MacOS**
-        * Download the MacOS version of MI-Brain `here <https://github.com/imeka/mi-brain/releases>`_.
+        * Download the MacOS version of MI-Brain `here (arm64) <https://scil.usherbrooke.ca/softwares/MI-Brain-mac-arm64.dmg>`_ or `here (x64) <https://scil.usherbrooke.ca/softwares/MI-Brain-mac-x86_64.dmg>`_.
         * Open the .dmg file and drag the MI-Brain icon in the Application folder.
 
     **On Windows**
