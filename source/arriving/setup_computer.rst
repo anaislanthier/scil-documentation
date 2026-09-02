@@ -53,7 +53,7 @@ Other python packages can be installed by replacing python3.X by a version of yo
 Virtual environments
 """"""""""""""""""""
 
-Virtual environments are a good way to separate the system's python installation from the python version you need for your work. It also allows you to have a precise set of python packages with specific versions. While there are many options for environments, we highly recommand using `uv <https://docs.astral.sh/uv/getting-started/installation/>`_. Start by installing it and creating a directory where all your environments will be saved:
+Virtual environments are a good way to separate the system's python installation from the python version you need for your work. It also allows you to have a precise set of python packages with specific versions. While there are many options for environments, we highly recommend using `uv <https://docs.astral.sh/uv/getting-started/installation/>`_. Start by installing it and creating a directory where all your environments will be saved:
 
 .. code-block:: bash
 
@@ -76,7 +76,7 @@ You can restart the terminal and create an environment:
     # Note. To download a python version to your /usr/bin without installing it:
     # https://www.python.org/downloads/
 
-When everything is set, restart your terminal. You should now be able to work in a chosen environment by using :bash:`source ~/.venvs/YOUR-VIRTUAL-ENV-NAME/bin/activate`. Now everytime you need to install a new library inside the environment, you should always try to use :bash:`uv pip install your_library`. The environment will use the right pip based on the current python version. *Don't use sudo pip!* It will use the pip of the system!
+When everything is set, restart your terminal. You should now be able to work in a chosen environment by using :bash:`source ~/.venvs/$NAME/bin/activate`. Now everytime you need to install a new library inside the environment, you should always try to use :bash:`uv pip install your_library`. The environment will use the right pip based on the current python version. *Don't use sudo pip!* It will use the pip of the system!
 
 You might want to always have a specific environment when opening a terminal. To do so, simply open the .bashrc and copy-paste this :bash:`source ~/.venvs/YOUR-VIRTUAL-ENV-NAME/bin/activate` at the end of it (don't forget to replace :bash:`YOUR-VIRTUAL-ENV-NAME` by the actual name of your environment).
 
